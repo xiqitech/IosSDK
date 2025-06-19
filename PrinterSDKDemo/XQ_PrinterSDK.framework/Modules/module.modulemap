@@ -1,0 +1,6 @@
+framework module XQ_PrinterSDK {
+  umbrella header "XQ_PrinterSDK.h"
+  export *
+
+  module * { export * }
+}
