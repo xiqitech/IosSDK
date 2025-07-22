@@ -55,6 +55,12 @@ typedef void(^connectCompleteBlock)(NSError * __nullable error);
 ///   - data: 二值数据
 - (void)print:(NSString *)UUIDDevice buffer:(NSData *)buffer block:(void (^)(BOOL success, NSString* msg))block;
 
+/// 打印标签
+/// - Prameters:
+///   - UUIDDevice: 发送到具体的设备(需要已经建立连接)
+///   - data: 二值数据
+- (void)printLabel:(NSString *)UUIDDevice buffer:(NSData *)buffer block:(void (^)(BOOL success, NSString* msg))block;
+
 /// 设置设备打印浓度
 /// - Parameters:
 ///   - UUIDDevice: 设备UUID

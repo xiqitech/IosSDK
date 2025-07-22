@@ -138,6 +138,26 @@ static NSString* const kTableViewCellReuseIdentifier = @"kTableViewCellReuseIden
         } cancel:nil error:nil];
     };
     
+    cell.sendHalfBlock = ^{
+        @strongify(self);
+
+        // 从 app bundle 中加载 half_test_1.png
+        UIImage *image = [UIImage imageNamed:@"half_test_1"];
+        if (!image) {
+            NSLog(@"图片 half_test_1 未找到");
+            return;
+        }
+        NSData *data = [ImageUtil convertLabelImage:image toWidth:240 toHeight:96 toRotation:-90];
+
+        [self.manager printLabel:model.UUIDDevice buffer:data block:^(BOOL success, NSString *msg) {
+            if (success) {
+                NSLog(@"发送成功: %@", msg);
+            } else {
+                NSLog(@"发送失败: %@", msg);
+            }
+        }];
+    };
+    
     cell.snapBlock = ^{
         @strongify(self);
         UIImage *image = [self imageFromView:self.view];

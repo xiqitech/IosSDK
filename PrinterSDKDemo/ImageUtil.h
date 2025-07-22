@@ -30,6 +30,10 @@ NS_ASSUME_NONNULL_BEGIN
          toWidth:(CGFloat)toWidth
         toHeight:(CGFloat)toHeight
               toRotation:(CGFloat)toRotation;
++ (NSData *)convertLabelImage:(UIImage *)image
+         toWidth:(CGFloat)toWidth
+        toHeight:(CGFloat)toHeight
+              toRotation:(CGFloat)toRotation;
 @end
 
 NS_ASSUME_NONNULL_END

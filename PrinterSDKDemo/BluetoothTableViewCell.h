@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) void(^connectBlock)(BOOL isConnect);
 @property (nonatomic, strong) void(^sendBlock)(void);
 @property (nonatomic, strong) void(^snapBlock)(void);
+@property (nonatomic, strong) void(^sendHalfBlock)(void);
 @property (nonatomic, strong) void(^stateBlock)(void);
 @property (nonatomic, strong) void(^densityBlock)(NSInteger value);
 
