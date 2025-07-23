@@ -46,7 +46,7 @@ typedef void(^connectCompleteBlock)(NSError * __nullable error);
 /// 发送数据
 /// - Parameters:
 ///   - UUIDDevice: 发送到具体的设备(需要已经建立连接)
-///   - data: 需要发送的数据
+///   - data: 需要发送的图片
 - (NSError *)sendData:(NSString *)UUIDDevice image:(UIImage *)image block:(void (^)(BOOL success, NSString* msg))block;
 
 /// 打印
@@ -55,11 +55,12 @@ typedef void(^connectCompleteBlock)(NSError * __nullable error);
 ///   - data: 二值数据
 - (void)print:(NSString *)UUIDDevice buffer:(NSData *)buffer block:(void (^)(BOOL success, NSString* msg))block;
 
-/// 打印标签
+/// 打印半寸标签
+/// 半寸标签图片数据以横向传入，即图片的高度永远保持96像素，宽度随标签纸而不同
 /// - Prameters:
 ///   - UUIDDevice: 发送到具体的设备(需要已经建立连接)
-///   - data: 二值数据
-- (void)printLabel:(NSString *)UUIDDevice buffer:(NSData *)buffer block:(void (^)(BOOL success, NSString* msg))block;
+///   - image: 需要发送的图片
+- (void)printHalfLabel:(NSString *)UUIDDevice image:(UIImage *)image block:(void (^)(BOOL success, NSString* msg))block;
 
 /// 设置设备打印浓度
 /// - Parameters:

@@ -147,9 +147,8 @@ static NSString* const kTableViewCellReuseIdentifier = @"kTableViewCellReuseIden
             NSLog(@"图片 half_test_1 未找到");
             return;
         }
-        NSData *data = [ImageUtil convertLabelImage:image toWidth:240 toHeight:96 toRotation:-90];
 
-        [self.manager printLabel:model.UUIDDevice buffer:data block:^(BOOL success, NSString *msg) {
+        [self.manager printHalfLabel:model.UUIDDevice image:image block:^(BOOL success, NSString *msg) {
             if (success) {
                 NSLog(@"发送成功: %@", msg);
             } else {
