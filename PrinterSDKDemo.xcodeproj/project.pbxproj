@@ -10,19 +10,6 @@
 		8003D141BDFB99561CC3F7AD /* libPods-PrinterSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6523FC8700A30E6B59E45FC /* libPods-PrinterSDKDemo.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		FF74E3582DA4FA5100923088 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		921F2DE4F088044EC2DC4D5E /* Pods-PrinterSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrinterSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-PrinterSDKDemo/Pods-PrinterSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A6523FC8700A30E6B59E45FC /* libPods-PrinterSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PrinterSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,7 +96,6 @@
 				FF132F6E2D9D290700DE426C /* Sources */,
 				FF132F6F2D9D290700DE426C /* Frameworks */,
 				FF132F702D9D290700DE426C /* Resources */,
-				FF74E3582DA4FA5100923088 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,8 +219,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiqi.PrinterSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -269,8 +259,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiqi.PrinterSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
