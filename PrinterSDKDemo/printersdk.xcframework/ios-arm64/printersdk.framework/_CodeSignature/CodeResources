@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/Printer.h</key>
 		<data>
-		Pp5fJl2Tk5Srb63pfYuIdWKnaGc=
+		pGXIgWsaZootUROy4ZLHcUPrkn4=
 		</data>
 		<key>Headers/printersdk.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		X6YSqT/L2uawh3+MgzdlWA4TUAI=
+		8EO6giJxE6H9MgbmxgppZ4lRDTA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -29,10 +29,6 @@
 	<dict>
 		<key>Headers/ImageUtils.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			2OEsGrT3Gv6PgTc0NI3VxOa7xDs=
-			</data>
 			<key>hash2</key>
 			<data>
 			sAmxIyGuc2Z6KSZbRKknw72XbIOzAarD+7vJJ2GNRqI=
@@ -40,21 +36,13 @@
 		</dict>
 		<key>Headers/Printer.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Pp5fJl2Tk5Srb63pfYuIdWKnaGc=
-			</data>
 			<key>hash2</key>
 			<data>
-			hs+o6wAIq/+yh53BWZzYEPS6zbJwzoKiEgKIZlQ7xPw=
+			5fv8di9sm7/5SvQIIXNLlh5j4ahcAjm8q522H8f2pmY=
 			</data>
 		</dict>
 		<key>Headers/printersdk.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			XZhDd6TloamT9qwfQm+9+INeXnQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			rf+aKfXEYMfG0ZKtYu6PscPTCUbmjq9oYUBnVTVMSYA=
@@ -62,10 +50,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			RL4051r6uaVX3kvAbYNuTDncRAU=
-			</data>
 			<key>hash2</key>
 			<data>
 			4dTQRV0Iw31A68WvzcXXItESi79oY7pRms3jmt+3asQ=

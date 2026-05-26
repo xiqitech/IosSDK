@@ -79,10 +79,10 @@ typedef NS_ENUM(NSInteger, PrinterState) {
 
 // Utilities
 @interface PrinterUtils : NSObject
-+ (nullable NSString *)genCrcWithMac:(NSString *)mac
-                               random:(NSData *)random
-                               lowCrc:(NSString * _Nullable * _Nullable)lowCrc
-                              highCrc:(NSString * _Nullable * _Nullable)highCrc;
++ (void)genCrcWithMac:(NSString *)mac
+               random:(NSData *)random
+               lowCrc:(NSString * _Nullable * _Nullable)lowCrc
+              highCrc:(NSString * _Nullable * _Nullable)highCrc;
 
 + (NSString *)bytesToHex:(NSData *)data;
 + (uint16_t)readUInt16BE:(NSData *)data offset:(NSInteger)offset;
